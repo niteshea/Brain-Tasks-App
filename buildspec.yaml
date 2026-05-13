@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - echo Building Docker image...
+      - docker login --username niteshea -p dckr_pat_lZo-kj98GzU6OU2n8OgDEx5AQHE
       - docker build -t static-app:latest .
 
   post_build:
